@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgages</title>
+</head>
+<body>
+  
+        <!--alt deve essere descrittiva-->
+    <figure>
+        <img 
+        src="/card/card.html" 
+
+        alt="human hands on a personal computer"
+        width="400"
+        height="400"/>
+        <figcaption>Working while travelling</figcaption>
+    </figure>
+   
+    <!--utile indicare anche i nome dei file in maniera adeguata-->
+
+  <!--responsività-->
+
+  <!--tag con attributi di dimensione-->
+
+  <!--srcset indichiamo più file a seconda della dimensione, 
+    indichiamo anche la dimensione opportuna. Le info vengono date al browser-->
+  <img
+  srcset="
+       batman-superman-200.jpg 200w,
+       batman-superman-530.jpg 530w,
+       batman-superman-800.jpg 800w
+       
+    "
+
+  sizes="(max-width: 320px) 180px,
+         (max-width: 720px) 400px,
+          800px,
+   
+    "
+
+  src="#"
+  alt="#"/>
+
+  <!--tag con attributi di risoluzione-->
+  <!--altra dimensione del srcset è la densità, in questo caso 2x: densità doppia di pixel -->
+  <img
+  src="batman.jpeg"
+  srcset="batman-hr.jpeg 2x"
+  alt="batman e superman in posa plastica su sfondo tenebroso"/>
+    
+
+  <!--controllo del design-->
+  <!--se vogliamo indicare un imagine diversa a seconda del dispositivo-->
+  <!--source indicherà le imagini a seconda del display-->
+  <picture>
+    <source media="(max-width: 720px" srcset="batman-portrait.jpg">
+    <source media="(min-width: 800px" srcset="batman.jpg">
+    <img src="batman.jpg" alt="solida descrizione dettagliata"/>
+  </picture>
+
+  <!--distinzione tra srcset: indicano la stessa imagine con risoluzione diversa; invece i picture indicano imagini diverse a seconda del display.-->
+
+</body>
+</html>
