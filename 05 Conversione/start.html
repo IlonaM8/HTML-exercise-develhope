@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+    <style>img{max-width:300px;}</style>
+</head>
+
+<body>
+    <!--prima alternativa-->
+    <picture>
+        <img src="/05 Conversione/assets/business-man.jpg" 
+             alt="figurina di plastica che rappresenta un'uomo vestito elegante" 
+             srcset="/05 Conversione/assets/business-man.webp" />
+    </picture>
+
+    <picture>
+        <img src="/05 Conversione/assets/ok-hand.jpg" 
+             alt="radiografia che rappresenta una mano che fa il segno dell'ok" 
+             srcset="/05 Conversione/assets/ok-hand.webp" />
+    </picture>
+
+
+
+
+
+    <!--seconda alternativa-->
+    <picture>
+        <source srcset="/05 Conversione/assets/business-man.webp" type="image/webp">
+        <source srcset="/05 Conversione/assets/business-man.jpg" type="image/jpeg"> 
+        <img src="/05 Conversione/assets/business-man.jpg" 
+             alt="figurina di plastica che rappresenta un'uomo vestito elegante">
+    </picture>
+
+    
+    <picture>
+        <source srcset="/05 Conversione/assets/ok-hand.webp" type="image/webp">
+        <source srcset="/05 Conversione/assets/ok-hand.jpg" type="image/jpeg"> 
+        <img src="/05 Conversione/assets/ok-hand.jpg" 
+             alt="radiografia che rappresenta una mano che fa il segno dell'ok">
+    </picture>
+
+
+</body>
+
+</html>
