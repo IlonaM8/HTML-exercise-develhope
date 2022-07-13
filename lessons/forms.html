@@ -4,9 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form in HTML</title>
 </head>
 <body>
-    
+    <form action="demo.php" method="post">
+        <h1>Scheda dell'eroe</h1>
+        <p>I campi obbligatori sono contrassegnati da <strong><abbr title="richiesto">*</abbr></strong></p>
+        
+        <section>
+            <h2>Eroe</h2>
+            <div>
+                <label for="name">
+                        <span>Nome:</span>
+                        <strong><abbr title="richiesto">*</abbr></strong>
+                </label>
+
+                <!--esistono molti altri attributes; come essitono anche molte altre di validazione client-side come minlength, maxlenght, min, max, type, pattern-->
+                <input type="text" id="hero" name="hero" autofocus required>
+            </div>
+
+            <div>
+                <label for="power">
+                        <span>Potere:</span>
+                        <strong><abbr title="richiesto">*</abbr></strong>
+                </label>
+                <input type="text" id="power" value="Super Forza">
+            </div>
+
+
+            <div>
+                <label for="mail">
+                        <span>E-mail:</span>
+                        <strong><abbr title="richiesto">*</abbr></strong>
+                </label>
+                <input type="email" id="email" value="usermail">
+            </div>
+
+            <div>
+                <label for="keyword">
+                        <span>Parola Chiave:</span>
+                        <strong><abbr title="richiesto">*</abbr></strong>
+                </label>
+                <input type="password" id="password" value="password">
+            </div>
+
+            <fieldset>
+                <legend>Team</legend>
+                <ul>
+                    <li>
+                        <label for="team_1">
+                            <input type="radio" id="team_1" name="team" value="JL">
+                            Justice League
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="team_2">
+                            <input type="radio" id="team_2" name="team" value="T">
+                            Titans
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="team_3">
+                            <input type="radio" id="team_3" name="team" value="SS">
+                            Suicide Squid
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Altre info</h2>
+            <div>
+                <label for="role">
+                    <span>Ruolo:</span>
+                </label>
+
+                <select id="role" name="role">
+                    <optgroup label="Positivo">
+                        <option value="leader" selected>Leader</option>
+                        <option value="bracciodx">Braccio Destro</option>
+                        <option value="bracciosx">Braccio Sinistro</option>
+                    </optgroup>
+
+                    <optgroup label="Negativo">
+                        <option value="infiltrato">Infiltrato</option>
+                        <option value="traditore">Traditore</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="partner">Partner più noto</label>
+               <input type="text" id="partner" name="partner" list="partners">
+
+               <datalist id="partners">
+                <option>Robin</option>
+                <option>Asso</option>
+                <option>Wonder</option>
+                <option>Wonder2</option>
+                <option>Wonder3</option>
+                <option>Wonder4</option>
+               </datalist>
+            </div>
+
+            <div>
+                <label for="alive">Sopravvisuto
+                    <input type="checkbox" id="alive" value="alive" checked>
+                </label>
+            </div>
+
+            <div>
+                <label for="uniform">
+                    <span>Divisa:</span>
+                </label>
+                <input type="color" id="uniform" name="uniform">
+            </div>
+
+            <div>
+                <label for="date">
+                    <span>date di ingresso:</span>
+                </label>
+                <input type="date" id="date" min="2022-06-01" max="2040-06-01">
+
+            </div>
+
+            <div>
+                <label for="bio">
+                    <span>Bio:</span>
+                </label>
+                <textarea cols="40" name="bio"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quibusdam ex earum error eum repellendus sequi, voluptates tempore suscipit blanditiis, ut, fuga sit dolor nulla alias neque quas quo. Illum.
+                Ipsam quia sint, harum, temporibus pariatur tempora ut quas necessitatibus, voluptate molestias consequatur quam suscipit repellat doloremque. Accusantium exercitationem fuga quas quos numquam alias aperiam error reiciendis, iste amet recusandae.
+                </textarea>
+
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <button type="submit">Aggiungi Eroe</button>
+            </div>
+        </section>
+
+    </form>
 </body>
 </html>
