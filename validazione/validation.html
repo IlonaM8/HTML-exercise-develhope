@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<title>Lezione HTML</title>
+	<title>Validation</title>
 	<style>
 		label {
 			display: block
@@ -18,21 +18,21 @@
 <form action="#">
 	<div>
 		<label for="form-email">Email</label>
-		<input type="email" id="form-email" name="email" required/>
+		<input type="email" id="form-email" name="email"/>
 		<label for="form-pass">Password</label>
-		<input type="password" id="form-pass" name="pass" required/>
+		<input type="password" id="form-pass" name="pass"/>
 	</div>
 	<div>
 		<label for="form-name">Nome e cognome</label>
-		<input type="text" id="form-name" name="name" required/>
+		<input type="text" id="form-name" name="name"/>
 		<label for="form-dob">Data di nascita</label>
-		<input type="date" id="form-dob" name="dob" required/>
+		<input type="date" id="form-dob" name="dob"/>
 		<label for="form-tel">Telefono</label>
-		<input type="tel" id="form-tel" name="tel" required/>
+		<input type="tel" id="form-tel" name="tel"/>
 	</div>
 	<div>
 		<label for="form-plan">Piano di abbonamento</label>
-		<select id="form-plan" name="plan" required>
+		<select id="form-plan" name="plan">
 			<option value="0">Free</option>
 			<optgroup label="Mensili">
 				<option value="199">1.99€/mese</option>
@@ -49,9 +49,9 @@
 		<label for="form-cvc">CVC</label>
 		<input id="form-cvc" name="cvc" type="number" required minlength="3" maxlength="3"/>
 		<label for="form-exp">Scadenza</label>
-		<input id="form-exp" name="exp" type="date" required/>
+		<input id="form-exp" name="exp" type="date"/>
 		<label for="form-address">Indirizzo di fatturazione</label>
-		<input type="text" id="form-address" name="address" required/>
+		<input type="text" id="form-address" name="address"/>
 	</div>
 
 	<button type="submit">Registrati</button>
