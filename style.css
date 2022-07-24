@@ -1,0 +1,133 @@
+:root{
+    font-size: 16px;
+    --background-color: rgb(136, 238, 189);
+    --card-color: pink;
+}
+
+/* here start the grid template */
+
+.grid-container{
+    display: grid;
+    /* grid-template-columns: repeat(6, 1fr); */
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid gold; */
+    grid-auto-rows: 200px;
+    align-items: center;
+    gap: 5px;
+}
+
+.header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    /* border: 2px solid rgb(0, 255, 204); */
+    align-self: flex-start;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.article-html-lessons {
+    /* border: 2px solid gold; */
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+
+.article-html-exercises {
+    /* border: 2px solid rgb(0, 255, 106); */
+    grid-column: 2 /3;
+    grid-row: 2 / 3;
+    text-align: center;
+} 
+
+.article-css-lessons {
+    /* border: 2px solid rgb(255, 0, 106); */
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    text-align: center;
+}
+
+
+.article-css-exercises {
+    /* border: 2px solid rgb(0, 47, 255); */
+    grid-column: 2 / 3;
+    grid-row: 3/ 4; 
+    text-align: center;
+} 
+
+.footer {
+    /* border: 2px solid rgb(210, 34, 241); */
+    grid-column: 1 / 3;
+    grid-row: 4/ 5;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.footer {
+    /* color: rgb(110, 18, 18); */
+    font-size: 1.1rem;
+
+
+}
+
+/* button {
+    background-color: var(--background-color);
+    padding: 40px;
+    /* width: 60%; */
+    /* border-radius: 20px; */
+    /* align-self: center; */
+    /* box-shadow: 5px 5px rgb(146, 164, 146, 0.5); */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+} */
+ 
+
+
+
+
+/* styling the font and color, button*/
+
+.html-exercises, 
+.html-lessons, 
+.css-exercises, 
+.css-lessons {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* padding: 43px 60px 43px; */
+    padding: 23px 40px 23px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+
+button::after{
+  content: "";
+  background-color: #5ce9b8;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s ease-in;
+}
+
+button:hover::after{
+    top: 0px;
+    left: 0px;
+}
+
+
+
+/* @media screen and (min-width: 768px) {
+    button {
+        padding: 23px 60px 23px;
+        color: blue;
+    }
+
+} */
