@@ -1,0 +1,75 @@
+:root{
+    background: floralwhite;
+    --std-border:1px solid #000;
+    --std-background: rgb(235, 243, 184);
+    --std-alt-background: rgb(129, 129, 242);
+    --std-side-background: rgb(196, 243, 196);  
+}
+
+main {
+    min-height: 800px;
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    display: flex;
+     -webkit-box-flex: row; 
+    flex-flow: row;
+}
+
+main > article {
+    margin: 4px;
+    padding: 5px;
+    border: var(--std-border);
+    background: var(--std-background);
+    -webkit-box-flex: 3 60%;
+    flex: 3 60%;
+    /* flex: 1; */
+    -webkit-order: 2;
+    order: 2;
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    /* align-items: baseline; */
+    /* align-items: stretch; */
+    justify-content: space-around;
+
+}
+
+main > article p {
+align-self: flex-start;
+}
+
+main > nav {
+    margin: 4px;
+    padding: 5px;
+    border: var(--std-border, grey);
+    background: var(--std-side-background);
+    /* flex: 1; */
+    -webkit-box-flex: 2 20%;
+    flex: 2 20%;
+    -webkit-order: 1;
+    order: 1;
+
+}
+
+main > aside {
+    margin: 4px;
+    padding: 5px;
+    border: var(--std-border, grey);
+    background: var(--std-side-background);
+    -webkit-box-flex: 2 20%;
+    flex: 2 20%;
+    /* flex: 1 20%; */
+    -webkit-order: 3;
+    order: 3;
+}
+
+header, 
+footer {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    border: var(--std-border, grey);
+    background: var(--std-alt-background);
+}

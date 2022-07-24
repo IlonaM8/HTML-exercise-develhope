@@ -1,0 +1,40 @@
+:root{
+    font-size: 16px;
+}
+
+.container{
+    display: grid;
+    /*dentro le parentesi indichiamo le label*/
+    grid-template-columns: [col-start] 1fr [col-two] 1fr [col-three] auto [col-four] 1fr [col-five] 1fr [col-last];
+    grid-template-rows: [row-start] 1fr [body-line] auto [row-last] 1fr;
+    justify-items: center;
+    text-align: justify;
+    column-gap: 40px;
+    row-gap: 20px;
+    border: 2px solid saddlebrown;
+}
+
+header {
+    grid-column-start: col-start;
+    grid-column-end: col-end;
+    grid-row: row-start;
+    border: 2px solid rgb(214, 226, 126);
+}
+
+article{
+  grid-column: col-start / col-five;
+  grid-row: 2;
+  border: 2px solid rgb(53, 139, 19);
+}
+
+aside {
+    grid-column-start: col-five;
+    grid-column-end: col-end;
+    grid-row: 2;
+    border: 2px solid rgb(19, 47, 139);
+}
+
+footer{
+    grid-area: row-last / 1 / row-last / 6;
+    border: 2px solid rgb(238, 111, 14);
+}

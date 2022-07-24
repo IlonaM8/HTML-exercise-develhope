@@ -1,0 +1,42 @@
+div {
+    background-color: greenyellow;
+    /*padding: 10px; se i quattro valori sono uguali si può indicare un'unico valore*/
+    /*padding: 20px 10px; top and bottom 20 and left and right 10*/
+    padding: 20px 5px 10px 10px; /* top, right, bottom, left*/
+    margin: 5px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(228, 212, 212);
+    /*esiste anche border-width*/
+    /*overflow: hidden;*/ /*consente di nascondere il contenuto che è più lungo del nostro box*/
+    overflow: scroll; /*puoi scrollare il contenuto*/
+     /*overflow: auto;  sceglie il browser*/
+    /*overflow: visible;  default*/
+}
+
+div p {
+    background-color: rgb(99, 245, 99);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(229, 155, 58);
+}
+
+div.div-bm-alt {
+    box-sizing: border-box;
+}
+
+/* inline boxes*/
+.div2-bm-alt{
+    background-color: aqua;
+}
+
+/*elementi di tipo in line si può gestire con  display in line block*/
+span{
+    display: inline-block;
+    background-color: antiquewhite;
+    padding: 20px 10px;
+    margin: 5px;
+    border: 1px solid blueviolet;
+    
+}
+

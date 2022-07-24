@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Css Layout</title>
+</head>
+<body>
+    <h1>CSS Layout</h1>
+    <p>The display inline-block </p>
+    <div>
+      <ul>
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+        <li><a href="">Link 5</a></li>
+      </ul>
+
+      <p>Compared to display: inline, the major difference is that <span>inline-block </span> allows to set a width and height on the element.</p>
+      <p>Also, with display: <span>inline-block</span>, the top and bottom margins/paddings are respected, but with display: inline they are not.</p>
+      <p>Compared to display: block, the major difference is that display: <span>inline-block </span> does not add a line-break after the element, so the element can sit next to other elements.</p>
+    </div>
+    
+    <div>
+        <img src="https://images.unsplash.com/photo-1658302640117-da5e9d9836cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="sunrise from a mountain" width="600"/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere consectetur quaerat unde harum. Doloribus ducimus quisquam non ex facere dolores ratione atque praesentium itaque architecto error, assumenda nesciunt repellat?</p>
+    </div>
+   
+    <div>
+        <h1>Using inline-block to Create Navigation Links </h1>
+        <p>One common use for display: inline-block is to display list items horizontally instead of vertically. The following example creates horizontal navigation links.</p>  
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#partners">Our Partners </a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>  
+    </nav>
+
+    <h1>Position Rule</h1>
+    <div class="position-container">
+        <img src="https://images.unsplash.com/photo-1658260318371-832d7d2ddc56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="animale nel giardino" width="400">
+        <p>The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+        <p>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value. </p>
+    </div>
+
+
+    <div>
+        <h2>Posizion static vs relative</h2>
+        <p>HTML elements are positioned static by default.
+            Static positioned elements are not affected by the top, bottom, left, and right properties.
+            An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
+        </p>
+        <p class="relative">An element with position: relative; is positioned relative to its normal position.
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+        </p>
+    </div>
+
+    <div>
+        <h2>Posizion fixed vs absolute vs sticky</h2>
+        
+        <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+        </p>
+        <p class="absolute">An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+            However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+        </p>
+        <p class="sticky">An element with position: sticky; is positioned based on the user's scroll position.
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+        </p>
+    </div>
+
+
+    <div class="other-container">
+        <h2>Titolo</h2>
+        <p>HTML elements are positioned static by default.
+            Static positioned elements are not affected by the top, bottom, left, and right properties.
+            An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
+        </p>
+    </div>
+
+
+</body>
+</html>

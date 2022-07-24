@@ -1,0 +1,35 @@
+:root{
+    font-size: 16px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    border: solid 2px sandybrown;
+
+}
+
+header {
+    grid-area: header;
+    border: solid 2px rgb(96, 192, 244);
+}
+
+article{
+    grid-area: main;
+    border: solid 2px rgb(96, 244, 108);
+}
+
+aside {
+    grid-area: sidebar;
+    border: solid 2px rgb(123, 96, 244);
+}
+
+footer{
+    grid-area: footer;
+    border: solid 2px rgb(244, 96, 155);
+}

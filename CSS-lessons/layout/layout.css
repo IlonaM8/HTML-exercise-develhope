@@ -1,0 +1,81 @@
+html{
+    font-size: 16px;
+}
+
+li {
+    display: inline-block;
+}
+
+span {
+    background: rgb(226, 242, 193);
+    /* display: block;
+    height: 200px; */
+}
+
+img{
+     /* float: left; consente di aggiungere un contenuto attorno, oggi si usa flexbox */
+    margin: 5px;
+}
+
+
+nav{
+    background-color: rgb(3, 239, 161);
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(195, 50, 18);
+}
+
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+p.relative{
+    position: relative;
+    border: 3px solid sandybrown;
+
+}
+
+p.absolute{
+    position: relative;
+    border: 3px solid rgb(96, 244, 130);
+
+}
+
+/* p.sticky{
+    position: sticky;
+    bottom: 0;
+    padding: 5px;
+    border: 3px solid rgb(96, 103, 244);
+} */
+
+div.other-container {
+    background: lavender;
+}
+
+div.position-container{
+    /* position: relative;
+    top: 50px; */
+    background: rgb(247, 247, 195);
+    opacity: 0.8;
+    margin-top: 50px;
+}
+
+/* fixed usato per i bottoni torna su*/
+img{
+    /* position: absolute;
+    margin: 5px;
+    bottom: 0;
+    right: 0;  */
+    /*Puoi posizionare l'immagine dove vuoi dentro la pagina in una poszione fissa */
+
+  border-radius: 20px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dario Galesi" />
+    <meta name="description" content="Filipaos mi spiega come funziona grid" />
+    <title>Philip Bezos</title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns:[line-start] 1fr [middle-line]1fr [line-end]; */
+      
+
+        }
+      
+        header {
+          /* grid-column: line-start/line-end; */
+          /* grid-area: 1/line-start/auto/line-end;  */
+          text-align: center;
+        }
+
+        p {
+        text-align: justify;
+        }
+        main {
+          /* grid-column: 1/-1 */
+        }
+        section {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 10px 10px;
+        }
+
+        article {
+          grid-column-start: span 2;
+        }
+
+        
+        footer {
+          /* grid-column: 1/-1; */
+        }
+
+        footer > p {
+          text-align: center;
+        }
+
+       
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+    <header>
+      <h1>Grid Explanation</h1>
+    </header>
+    <main>
+      <section>
+      <article>
+        <h2>Article Title</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+          explicabo dolore? Animi porro possimus odio voluptatibus eligendi? Non
+          minima ab tempore labore aperiam. Ipsum eaque exercitationem cum
+          impedit sapiente fugiat facere optio officia aliquid! Excepturi sint
+          explicabo itaque laboriosam facere, doloremque in. Neque enim ex
+          similique reprehenderit tempora, nostrum numquam dolorum dolorem
+          voluptatem eius autem nulla quidem aliquam explicabo cum consectetur
+          id quia! Delectus recusandae accusamus deleniti sed quidem eveniet sit
+          repellendus voluptate ratione labore magnam sint consequuntur,
+          necessitatibus cupiditate autem magni hic rem tenetur laudantium optio
+          culpa esse laboriosam blanditiis aliquam? Modi odit magni itaque quis
+          magnam provident sit nisi in excepturi quas qui vero, atque deserunt
+          alias quam enim! Praesentium tempora facilis necessitatibus cupiditate
+          sapiente voluptates fugiat, earum illo beatae quidem neque.
+          Voluptatibus facilis facere voluptate consectetur doloribus ab
+          reiciendis dolorem! Doloribus a rerum, ratione cum odit eius natus
+          perferendis deserunt at voluptate ipsum facilis minima aut ex illum
+          iusto atque quas assumenda. Non maxime ex, cupiditate nesciunt dicta
+          consequuntur. Commodi rem praesentium aliquam sequi ipsa iure odio
+          itaque alias, rerum sunt, unde delectus voluptates. Officia blanditiis
+          molestiae eligendi harum deleniti recusandae ex reprehenderit saepe
+          natus tempora illo ut provident similique, delectus facilis dolorem
+          obcaecati eos commodi laboriosam quaerat optio. Doloremque laborum
+          corporis tempore saepe explicabo provident incidunt? Veritatis quaerat
+          minus perferendis nihil nostrum sapiente atque molestiae sequi.
+        </p>
+      </article>
+      <aside>
+        <h2>Aside Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quam
+          aliquam? Voluptate dolorem possimus vitae debitis esse rerum, eius
+          sequi quod fugit deserunt vero veritatis perspiciatis placeat,
+          assumenda sunt sit optio quis laborum eos veniam aperiam? Dolorum,
+          voluptatibus quos distinctio itaque eos sed temporibus similique
+          quidem totam pariatur at quibusdam.
+        </p>
+      </aside>
+    </section>
+    </main>
+
+    <footer>
+      <p>copyright Filipaos 2022</p>
+    </footer>
+  </div>
+  </body>
+</html>

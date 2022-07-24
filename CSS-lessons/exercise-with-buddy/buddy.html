@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form action="#">
+            <label for="nome">Nome</label>
+            <input type="text" name="name" id="name" size="50" maxlength="50">
+            <br>
+
+            <div>
+            <p>Seleziona il genere</p>
+            <label for="sesso">Maschio</label>
+            <input type="radio" name="seleziona-genere" id="maschio">
+            <label for="femina">Femina</label>
+            <input type="radio" name="seleziona-genere" id="femina">
+            <label for="altro"></label>
+            <input type="radio" name="seleziona-genere" id="altro">
+            </div>
+            <hr>
+            <select name="classi" id="seleziona-classi">
+                <optgroup label="classi fullstack">
+                    <option value="fs-1">Fs-1</option>
+                    <option value="fs-2">Fs-2</option>
+                </optgroup>
+
+                <optgroup label="classi Java">
+                    <option value="java-1">Java-1</option>
+                    <option value="java-1">Java-2</option>
+                </optgroup>
+            </select>
+
+            <label for="cap">CAP</label>
+            <input type="text" pattern="[0-9]{5}" id="cap">
+            <br>
+
+            
+            <label for="part-time-student">Studente lavoratore</label>
+            <input type="checkbox" id="studente-lavoratore" name="part-time-student">
+
+            <br>
+            <label for="descrizione-lavoro-svolto"></label>
+            <input type="text" size="80" name="descrizione-lavoro-svolto" id="descrizione-lavoro-svolto">
+            
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            <br>
+            <p>Incontro con Rocco</p>
+        </form>
+    </section>
+    
+</body>
+</html>
