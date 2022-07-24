@@ -1,0 +1,84 @@
+:root{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+.calculator{
+    position: absolute;
+    border-radius: 2px solid rgb(229, 233, 229);
+    top: 50%;
+    left: 50%;
+    width: 400px;
+
+}
+
+.calculator-screen{
+    width: 100%;
+    font-size: 2.5rem;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(67, 85, 104);
+    color: white;
+    padding-right: 20px;
+    padding-left: 10px;
+    text-align: right;
+
+}
+
+button {
+    height: 60px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border: 1px solid rgb(70, 82, 95, 0.5);
+
+}
+
+.operator {
+    background-color: rgb(178, 218, 224, 0.5);
+}
+
+.zero {
+    border-bottom-left-radius: 5px;
+}
+
+
+/* Grid starts here*/
+
+.calculator-keys {
+    display: grid;
+
+    /* oppure puoi usare la keyword repeat*/
+    /* grid-template-columns: repeat(4, 1fr); */
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+}
+
+
+/* posizione l'uguale nella riga 2 /colonna 4, deve occupare 4 righe*/
+.equal-sign {
+    /* grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5; */
+
+    /*oppure grid-row e grid-column */
+    grid-row: 2/6;
+    grid-column: 4/5;
+
+    /* oppure grid area che combina sia le row che le columns */
+   /* grid-row-start, grid-column-start, grid-row-end, grid-column-end */
+    /* grid-area: 2 / 4 / 6 / 5; */
+
+    background: rgb(235, 105, 105);
+    border: 1px solid rgb(239, 244, 239);
+    border-left: 1px solid grey;
+    height: 100%;
+    border-bottom-right-radius: 5px;
+}
