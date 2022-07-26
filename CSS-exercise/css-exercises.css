@@ -1,0 +1,228 @@
+
+
+/*  flexbox starts here */
+.card-container {
+    /* border: 1px solid gold; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+/* making a grid layout with flexbox only for the cards*/
+.card-grid-ish {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.card-grid-ish > *  {
+    flex: 1 1 2em;
+    align-content: flex-end;
+    /* background: rgb(201, 246, 230); */
+}
+
+/* if one of them needs a specific dimensions*/
+/* .card-grid-ish > *:nth-child(2) {
+    flex: 1 1 10%;
+
+} */
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-0 {
+    flex-basis: 100%;
+    /* border: 1px solid gold; */
+    /* background-color: azure; */
+    text-align: center;
+}
+
+.card-1 {
+  display: flex;
+    /* border: 1px solid green; */
+    text-align: center;
+    /* flex-grow: 1; */
+}
+
+.card-2 {
+  display: flex;
+  text-align: center;
+    /* border: 1px solid rgb(51, 0, 128); */
+    
+}
+
+.card-3 {
+  display: flex;
+  text-align: center;
+  /* border: 1px solid rgb(64, 243, 64); */
+    
+}
+
+.card-4 {
+  display: flex;
+  text-align: center;
+    /* border: 1px solid rgb(128, 0, 87); */
+}
+
+.card-5 {
+  display: flex;
+  text-align: center;
+    /* border: 1px solid rgb(87, 230, 220); */
+}
+
+.card-6 {
+  display: flex;
+  text-align: center;
+  /* border: 1px solid rgb(233, 159, 55); */
+}
+
+.card-7 {
+  display: flex;
+  text-align: center;
+  /* border: 1px solid rgb(245, 156, 131); */
+}
+
+.card-8 {
+  display: flex;
+  text-align: center;
+    /* border: 1px solid green; */
+}
+
+
+/* questo sarebbe il footer*/
+.card-9 {
+    /* border: 1px solid rgb(220, 13, 196);
+    background-color: rgb(245, 223, 194); */
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+
+
+/* style for the cards*/
+
+.project-card {
+    font-display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-self: center;
+    width: 450px;
+    height: 300px;
+    background-color: rgb(159, 247, 180);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.project-card p {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 5px;
+}
+
+/* style the buttons */
+
+.button-45 {
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  padding: 2px 4px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+  outline: 0;
+}
+
+
+.button-45:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.button-45:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+  /* second button */
+
+  .button-55 {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .55rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-radius: 11px;
+  }
+  
+  .button-55:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .button-55:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+ 
